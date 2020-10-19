@@ -12,5 +12,6 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.172.1/g' package/base-files/files/bin/config_generate
+sed -i 's/5.4/4.19/g' target/linux/x86/Makefile
 git clone https://github.com/BoringCat/luci-app-mentohust.git package/luci-app-mentohust
 git clone https://github.com/KyleRicardo/MentoHUST-OpenWrt-ipk.git package/mentohust
